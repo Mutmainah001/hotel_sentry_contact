@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+.nav {
+  background-color: #eba12a !important;
+}
+
+.nav .nav-link {
+  color: #fff !important;
+}
+
+.nav1 .nav-link {
+  padding-right: 55px !important;
+}
+
+.nav-bar {
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+.nav-bar .image1 {
+  position: absolute;
+  height: 73px;
+  width: 270px;
+}
+
+hr {
+  border-top: 1.2px solid #eba12a;
+}
+
+#feedback {
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 50px;
+  color: #232322;
+}
+
+.container .contact_head {
+  letter-spacing: 0.1em;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 85px;
+  font-family: Montserrat;
+  color: #232322;
+}
+
+.container .nav {
+  background-color: #fff !important;
+}
+
+.container .nav-link {
+  color: black !important;
+}
+
+.container.navbar-toggler {
+  background-color: black !important;
+}
+
+.info {
+  letter-spacing: 0.1em;
+  top: 100px;
+  font-family: Montserrat;
+}
+
+.footer {
+  bottom: 0;
+  background-color: #aaaa55;
+  justify-content: center;
+  color: #fff;
+}
+
+.foot .nav {
+  background-color: #aaaa55 !important;
+}
+
+.foot .nav .nav-item .nav-link {
+  color: #fff !important;
+  text-align: left !important;
+  float: left !important;
+}
+
+.foot-input {
+  font-family: Montserrat;
+  top: 30px;
+}
+
+.foot-input button {
+  color: #fff;
+  background-color: #eba12a;
+}
+
+.info-foot {
+  font-family: Montserrat;
+}
+
+.foot .nav img {
+  height: 50px;
+  width: 80px;
+}
