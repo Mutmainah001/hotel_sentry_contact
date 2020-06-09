@@ -148,6 +148,10 @@ hr {
 /*Adjustment to make address show above map which has z-index of 3*/
 @media screen and (max-device-width: 800px), screen and (max-width:800px) {
 .info-block-resp{
-  z-index: 3;
+  position: relative;
+  display: contents;
 }
+}
+.position-map{
+  width: 100%;
 }
