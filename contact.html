@@ -61,35 +61,46 @@
     <br>
     <br>
     <!--Contatct Info Section-->
-    <div class="container">
-       <section class="row">
-         <div class="col-md-6">
-            <form action="">
-               <input type="text" placeholder="Firstname">  </input>
-               <input type="text" placeholder="Lastname">  </input>
-               <input class="col-md-6" type="email" placeholder="Email">  </input>
-               <input class="col-md-6" type="text" placeholder="Phone Number">  </input>
-               <textarea cols="60" rows="10" placeholder="Type Message"></textarea>
-               <button class="col-md-6">SEND MESSAGE</button>
-            </form>
-         </div>
+    <div class="center-contact-page">
+        <div class="container">
+            <section class="row contact-row-grid  contact-flexbox">
+              <div class="col-md-6 contact-form-box">
+                <form action="">
+                  <div class="names">
+                      <label>FIRSTNAME*<br><input type="text" placeholder="Firstname"></label>
+                    
+                      <label >LASTNAME*<br><input type="text" placeholder="Lastname"> </label>
+                    
+                    
+                  </div>
+                  <label class="message-label">EMAIL*<br><input  type="email" class="contact-full-width-input" placeholder="Email">  </input></label><br>
+                  <label class="message-label">PHONE*<br><input class="contact-full-width-input" type="text" placeholder="Phone Number">  </input></label></br>
+                  <label class="message-label">MESSAGE*<br><textarea class="textarea-border-fit" rows="10" placeholder="Type Message"></textarea></label>
+                            
+                  <button type="submit" class="button contact-form-button">SEND MESSAGE</button>             
+                  </form>
+              </div>
 
-         <div class="info col-md-6">
-            <h2>Contact Information</h2>
-            <div>
-               <i class="fa fa-map-marker"></i>
-               <b>1056, Independence Avenue, By Okpara Square, Enugu</b>
-            </div>
-            <div>
-               <i class="fa fa-phone"></i>
-               <b>+234803 333 0000</b>
-            </div>
-            <div>
-               <i class="fa fa-envelope"></i>
-               <b>info@thecynosurehotel.com</b>
-            </div>
-         </div>
-       </section>
+              <div class="info col-md-6">
+                <h2>Contact Information</h2>
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <b>1056, Independence Avenue, By Okpara Square, Enugu</b>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <b>+234803 333 0000</b>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <b>info@thecynosurehotel.com</b>
+                </div>
+              </div>
+            </section>
+        </div>
+        <!--mapsection-->
+        <div id="map"></div>
+
     </div>
     <!--footer-->
     <div class="footer">
@@ -149,5 +160,25 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        var uluru = {lat: -25.344, lng: 131.036};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 4, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: uluru, map: map});
+      }
+          </script>
+          <!--Load the API from the specified URL
+          * The async attribute allows the browser to render the page while the API loads
+          * The key parameter will contain your own API key (which is not needed for this tutorial)
+          * The callback parameter executes the initMap() function
+          -->
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtXthEWAQKXjmgKH7Q7AtatJ9pO5Sb1HQ&callback=initMap">
+          </script>
   </body>
 </html>

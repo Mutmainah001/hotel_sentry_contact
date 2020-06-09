@@ -100,3 +100,43 @@ hr {
   height: 50px;
   width: 80px;
 }
+
+.center-contact-page{
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+
+#map{
+    height: 50vh;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of its */
+}
+
+.contact-row-grid{
+  margin-bottom: 40px;
+}
+
+.contact-form-box{
+  border: 2px solid#ce9f53;
+  padding: 20px;
+  border-radius: 5px;
+  height: 85vh;
+}
+.contact-form-button{
+  background-color: #eba12a; width: 100%; border-radius: 5px;
+}
+.textarea-border-fit{
+    width: 100%;
+}
+.names{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.first-name-div{
+  margin-left: auto;
+}
+
+.message-label, .contact-full-width-input{
+  width: 100%;
+}
+
