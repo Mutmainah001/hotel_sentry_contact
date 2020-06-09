@@ -119,13 +119,13 @@ hr {
   border: 2px solid#ce9f53;
   padding: 20px;
   border-radius: 5px;
-  height: 85vh;
 }
 .contact-form-button{
   background-color: #eba12a; width: 100%; border-radius: 5px;
 }
 .textarea-border-fit{
     width: 100%;
+    height: auto;
 }
 .names{
   display: flex;
@@ -139,4 +139,15 @@ hr {
 .message-label, .contact-full-width-input{
   width: 100%;
 }
+#contact-form-vertical{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
+/*Adjustment to make address show above map which has z-index of 3*/
+@media screen and (max-device-width: 800px), screen and (max-width:800px) {
+.info-block-resp{
+  z-index: 3;
+}
+}
